@@ -1,5 +1,6 @@
 # Métodos e Técnicasc- Risco Relativo
-Repositório com a descrição dos principais métodos e técnicas utilizadas nesse projeto
+Repositório com a descrição dos principais métodos e técnicas utilizadas nesse projeto.
+Aceesando [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) desse projeto, é possível ver a implementação dos modelos de seção 2 e 3.
 
 <details>
 
@@ -598,7 +599,7 @@ Foram utilizadas três técnicas diferentes no modelo de Regressão Logística:
     É uma técnica de reamostragem no qual tem com propósito equilibrar essa diferença diminuindo o número de instâncias da classe majoritária.
     
 
-Para ver cada uma delas, acessar o Google Colab: https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing
+Para ver cada uma delas, acessar o Notebook desse projeto no [Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing).
 
 A que teve maior quantidade de acertos de *Maus Pagadores*, mas ainda assim com boas métricas foi a primeira. Abaixo está o código:
 
@@ -632,7 +633,5 @@ Conforme discutido na Seção 2, neste projeto a prioridade foi diminuir os fals
 
 
 
-
-Para mais detalhes acessar o [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) .
 
 </details>
