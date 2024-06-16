@@ -1,4 +1,4 @@
-# methods_techniques_risk_relative
+# Métodos e Técnicasc- Risco Relativo
 Repositório com a descrição dos principais métodos e técnicas utilizadas nesse projeto
 
 <details>
