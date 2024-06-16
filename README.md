@@ -633,6 +633,6 @@ Conforme discutido na Seção 2, neste projeto a prioridade foi diminuir os fals
 
 
 
-Para mais detalhes acessar o [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing).
+Para mais detalhes acessar o [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) .
 
 </details>
