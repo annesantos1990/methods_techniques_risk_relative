@@ -466,7 +466,8 @@ A matriz de confusão é uma métrica de performance dos algoritmos de classific
 
 No Google Colab, exportei os dados da tabela com todas as variáveis dummy, assim como o risk_score e a variável  ***risk_class*** com a classificação do cliente como “Bons pagadores” e “Maus pagadores”
 
-![1_ql1siLJsgfdmnabD4Jy8kg](https://github.com/annesantos1990/limpezadedados_spotify/assets/166059836/c7f6cdce-ed99-451b-8aa4-d416aa8a14ca)
+![1_ql1siLJsgfdmnabD4Jy8kg](https://github.com/annesantos1990/methods_techniques_risk_relative/assets/166059836/e76589fa-2486-4ed1-bb8d-88da4c688aa0)
+
 
 Feito isso, a variável risk_class foi reclassificada em valores numéricas, onde Mau Pagador recebeu valor 1 e Bons Pagadores recebeu valor 0:
 
