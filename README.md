@@ -633,7 +633,7 @@ plt.title('Matriz de Confusão')
 plt.show()
 ```
 
-Conforme discutido na [Seção 2](#2-Modelo-de-Classificação-Risco-de-Crédito Baseado no Risco Relativo), neste projeto a prioridade foi diminuir os falsos positivos e ter também boa quantidade de acertos de *Maus Pagadores*. Por isso, o formato de regressão logística com o ***Class Weight*** foi o escolhido, pois ele teve os fatores supracitados.
+Conforme discutido na Seção 2, neste projeto a prioridade foi diminuir os falsos positivos e ter também boa quantidade de acertos de *Maus Pagadores*. Por isso, o formato de regressão logística com o ***Class Weight*** foi o escolhido, pois ele teve os fatores supracitados.
 
 
 
