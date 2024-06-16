@@ -32,9 +32,7 @@ O código utilizado para a segmentação foi o seguinte:
 
 O cálculo do risco relativo será feito para cada quartil, conforme a fórmula:
 
-$$
-𝑅𝑅_{Q_n}= \tau_{Q_n}/\tau_{Q_x, Q_y, Q_z}
-$$
+$$𝑅𝑅_{Q_n}= \frac{\tau_{Q_n}}{\tau_{Q_x, Q_y, Q_z}}$$
 
 Onde, 
 
@@ -46,15 +44,11 @@ Para o cálculo de Risco Relativo no Big Query, foi utilizado o seguinte racioc�
 
 $\tau_{Q_1}$ é calculado como a média da variável *default_flag* no quartil *n*. Como a variável *default_flag* tem valor 1 para inadimplentes e 0 para adimplentes, a soma dessa variável dentro do quartil 1, dividida pelo número de observações no quartil, nos dá a taxa de inadimplência para aquele grupo:
 
-$$
-\tau_{Q_n}= media(\textup{default flag(Qn)})
-$$
+$$\tau_{Q_n}= media(\textup{default flag(Qn)})$$
 
 e
 
-$$
-\tau_{Q_x, Q_y, Q_z}= \frac{\sum (\textup{default flag}) - \Sigma (\textup{default flag (Qn)})}{N-N_{Qn}}
-$$
+$$\tau_{Q_x, Q_y, Q_z}= \frac{\sum (\textup{default flag}) - \Sigma (\textup{default flag (Qn)})}{N-N_{Qn}}$$
 
 Onde,
 
@@ -236,7 +230,7 @@ Nessa tabela foi obtida a segmentação em quartis das oito variáveis (**age | 
 
 **total_measurements:**
 
-Nessa tabela, foi feita a soma da variável default_flag ($\sum (\textup{default flag})$) e a contagem do total de linhas da tabela unificada (Para o cálculo de $*N*$. 
+Nessa tabela, foi feita a soma da variável default_flag ( $\sum (\textup{default flag})$ ) e a contagem do total de linhas da tabela unificada (Para o cálculo de $N$ ). 
 
 ```sql
 total_measurements AS (
@@ -249,7 +243,7 @@ total_measurements AS (
 
 Onde,
 
-SUM(default_flag) AS sum_default é $\sum (\textup{default flag})$
+`SUM(default_flag) AS sum_default` é $\sum (\textup{default flag})$
 
 COUNT(*) AS total é $N$
 
@@ -271,9 +265,9 @@ age_relative_risks AS (
 
 Onde,
 
-- AVG(default_flag) é $\tau_{Q_n}= media(\textup{default flag(Qn)})$
-- ((total_measurements.sum_default - SUM(default_flag)) / (total_measurements.total - COUNT(*))) é $\tau_{Q_x, Q_y, Q_z}$
-- AVG(default_flag) / ((total_measurements.sum_default - SUM(default_flag)) / (total_measurements.total - COUNT(*))) AS relative_risk é $RR$
+- `AVG(default_flag)` é $\tau_{Q_n}= media(\textup{default flag(Qn)})$
+- `((total_measurements.sum_default - SUM(default_flag)) / (total_measurements.total - COUNT(*)))` é $\tau_{Q_x, Q_y, Q_z}$
+- `AVG(default_flag) / ((total_measurements.sum_default - SUM(default_flag)) / (total_measurements.total - COUNT(*))) AS relative_risk` é $RR$
 
 No final, foram agrupadas todas as tabelas pelos quartiles de cada um, usando o comando JOIN e os $RR$ de cada variável foi classificado de acordo com essa tabela:
 
@@ -400,9 +394,7 @@ final_scores AS (
 
 O valor de corte foi determinado pelo valor da taxa de inadimplência para cada um dos possíveis risk_score. A taxa de inadimplência ($\tau_i$ ) foi calculada dividindo o somatório do *default_flag* para cada risk_score pelo quantidade total de valores da variável *default_flag*. 
 
-$$
-\tau_i=\frac{\sum(\text{default flag)}_i}{N}
-$$
+$$\tau_i=\frac{\sum(\text{default flag)}_i}{N}$$
 
 Onde, 
 
