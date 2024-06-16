@@ -466,7 +466,9 @@ A matriz de confusão é uma métrica de performance dos algoritmos de classific
 
 No Google Colab, exportei os dados da tabela com todas as variáveis dummy, assim como o risk_score e a variável  ***risk_class*** com a classificação do cliente como “Bons pagadores” e “Maus pagadores”
 
-![1_ql1siLJsgfdmnabD4Jy8kg](https://github.com/annesantos1990/methods_techniques_risk_relative/assets/166059836/e76589fa-2486-4ed1-bb8d-88da4c688aa0)
+![Untitled (6)](https://github.com/annesantos1990/methods_techniques_risk_relative/assets/166059836/8f7c576c-d938-442c-aff0-a7e4c492bef9)
+
+
 
 
 Feito isso, a variável risk_class foi reclassificada em valores numéricas, onde Mau Pagador recebeu valor 1 e Bons Pagadores recebeu valor 0:
@@ -513,7 +515,7 @@ Para o meu modelo de classificação, é importante que eu diminua os falsos pos
 
 Se eu quero reduzir a probabilidade de inadimplências e perdas, temos que focar em diminuir os falsos positivos.
 
-![1_ql1siLJsgfdmnabD4Jy8kg.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/75dcc154-fd1d-4af5-b505-98330c057cd2/7e1c104d-a06d-45e7-a476-33fc1991848a/1_ql1siLJsgfdmnabD4Jy8kg.jpg)
+![1_ql1siLJsgfdmnabD4Jy8kg](https://github.com/annesantos1990/methods_techniques_risk_relative/assets/166059836/e76589fa-2486-4ed1-bb8d-88da4c688aa0)
 
 - Assim, o **ppv** (**Positive Predictive Value (PPV) ou precisão)** precisa dar alto, porque teremos menos falsos positivos, aumentando a precisão positiva
 - E o **recall da variável negativa** precisa  ser elevado, porque, entre todos os valores verdadeiramente negativos, precisamos que haja poucos falsos positivos (significando que o modelo previu um valor positivo quando, na verdade, é verdadeiramente negativo).
