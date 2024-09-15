@@ -1,4 +1,4 @@
-# Métodos e Técnicasc- Risco Relativo
+# Métodos e Técnicas- Risco Relativo
 Repositório com a descrição dos principais métodos e técnicas utilizadas nesse projeto.
 
 Acessando o [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) desse projeto, é possível ver a implementação dos modelos de seção 2 e 3.
